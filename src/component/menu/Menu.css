@@ -1,0 +1,111 @@
+#menu {
+  box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+
+.menu__container {
+  margin-top: 2rem;
+}
+
+.menu__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1.4rem;
+  line-height: 1.5;
+}
+
+.menu__title p {
+  font-size: 1.3rem;
+}
+
+.menu__btn {
+  color: #111;
+  margin-top: 1rem;
+  padding: 0rem 0.8rem;
+}
+
+.food__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  gap: 2.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-light);
+  border: 2px solid var(--text-color1);
+  border-radius: 0 4rem;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
+  transition: var(--transition);
+}
+
+.card:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menu__food-image {
+  display: flex;
+  justify-content: center;
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 1rem;
+}
+
+.about__food {
+  color: var(--color-dark);
+  padding: 1rem;
+}
+
+.food__stripe h2,
+p {
+  line-height: 1.5;
+  text-align: center;
+}
+
+.food__stripe h2 {
+  margin-top: 0.7rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.9rem;
+}
+
+.food__stripe p {
+  font-size: 1.3rem;
+}
+
+.food__price {
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin-top: 0.3rem;
+  text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  .menu__title p {
+      font-size: 1.7rem;
+    }
+  
+    .food__stripe h2 {
+      font-size: 2.5rem;
+    }
+  
+    .food__stripe p {
+      font-size: 1.6rem;
+    }
+  
+    .food__price {
+      font-size: 2.5rem;
+    }
+} 
+
+@media screen and (max-width: 768px) {
+.food__container {
+   grid-template-columns: repeat(auto-fit, minmax(21.5rem, 1fr));
+ }
+}
