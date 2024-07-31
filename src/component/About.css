@@ -1,0 +1,51 @@
+.about__container {
+  height: auto;
+  margin-top: 1rem;
+}
+
+.about__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.about__details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.about__left {
+  flex: 1 1 45rem;
+
+}
+
+.about__left img {
+  width: 100%;
+}
+
+.about__right {
+  flex: 1 1 45rem;
+  padding: 2rem;
+}
+
+.about__right h1 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.about__right p {
+  display: flex;
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 1.9;
+}
+
+.about__btn {
+  color: #111;
+  padding: 0.5rem 0.5rem;
+  margin: 1rem 0;
+}
