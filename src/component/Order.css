@@ -1,0 +1,67 @@
+.order__container {
+  box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+
+
+form {
+  max-width: 90rem;
+  border-radius: .5rem;
+  box-shadow: var(--box-shadow);
+  border: 0.3rem solid rgba(0, 0, 0, .2);
+  padding: 1.5rem;
+  margin: 0 auto;
+}
+
+form .inputBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+form .inputBox .input {
+  width: 49%;
+
+}
+
+form .inputBox .input label {
+  display: block;
+  padding: .5rem 0;
+  font-size: 1.5rem;
+  color: var(--color-dark);
+}
+
+form .inputBox .input input,
+form .inputBox .input textarea {
+  background: #eee;
+  border: none;
+  border-radius: .5rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  text-transform: none;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+form .inputBox .input input:focus,
+form .inputBox .input textarea:focus {
+  border: .1rem solid var(--color-primary1);
+}
+
+form .inputBox .input textarea {
+  height: 10rem;
+  resize: none;
+}
+
+form .btn {
+  margin-top: 23px;
+  color: var(--color-white);
+  background: var(--color-primary1);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media screen and (max-width: 430px) {
+  form .inputBox .input {
+    width: 100%;
+  }
+}

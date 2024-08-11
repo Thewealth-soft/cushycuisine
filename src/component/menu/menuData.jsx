@@ -5,7 +5,7 @@ import food4 from "../../assets/images/food4.jpg";
 import food5 from "../../assets/images/food5.jpg";
 import food6 from "../../assets/images/food6.jpg";
 
-const foodItems = [
+const MenuDatas = [
   {
     id: 1,
     name: "Jollof rice",
@@ -51,4 +51,4 @@ const foodItems = [
   },
 ];
 
-export default foodItems;
+export default MenuDatas;

@@ -12,17 +12,19 @@
 
 :root {
   /************Color**************/
-  --color-bgc-header: #142440;
   --color-white: #fff;
   --color-dark: #666;
-  --text-color1: #193a6f;
-  --color-1: #ff4a44;
-  /* --color-primary: #ff4f1f; */
-  --color-primary2: #dc6601;
+  --color-dark2: #111111e7;
+  --text-color1: #;
+  /* --color-1: #ff4a44; */
+  --color-primary: rgba(229, 221, 221, 0.947);
+  /* --color-primary2: #dc6601; */
+  --color-primary1: #f25b0a;
+  --color-primary2: #cc0b0b;
+--color-primary3: #79933d;
+--color-secondary:#f25b0abc;
 
-  /* #f44a07 */
-  --color-light: #ccf0f3;
-  --color-dark: #222;
+  --color-light: #ccf0f33f; 
   --box-shadow: 0 0 5rem rgba(0, 0, 0, 0.1);
   --box-shadow2: 0 0 5rem rgba(0, 0, 0, 0.4);
 
@@ -34,7 +36,7 @@
 }
 
 html {
-  font-size: 65%;
+  font-size: 70%;
   scroll-padding-top: 5.5rem;
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -70,18 +72,24 @@ img {
   font-size: 20px;
   margin-top: 1rem;
   font-weight: bold;
-  color: var(--text-color1);
+  color: var(--color-primary2);
 }
 
 .sub__heading {
   font-size: 4rem;
+    color: var(--color-primary3);
+}
+
+.sub__heading,
+.heading {
+  text-align: center;
 }
 
 .btn {
   display: inline-block;
   background-color: var(--color-white);
   color: var(--color-dark);
-  padding: 1rem 1.5rem;
+  padding: 0.5rem 1rem;
   border: 1px solid transparent;
   font-weight: 500;
   font-size: 2rem;
@@ -89,18 +97,37 @@ img {
 }
 
 .btn:hover {
-  background-color: transparent;
-  color: var(--color-dark);
-  border-color: var(--color-dark);
+  background-color: #f25b0aa2;
 }
+
 @media screen and (max-width: 1024px) {
-    html {
-        font-size: 57%;
-      }
+  html {
+    font-size: 57%;
+  }
+
+  .btn {
+    padding: 0.5rem 0.5rem;
+    font-size: 1.5rem;
+  }
 }
+
 @media screen and (max-width: 630px) {
 
   .container {
-    width: var(--container-width-sm);
+    /* width: var(--container-width-sm); */
+  }
+
+  .btn {
+    padding: 0.3rem 0.3rem;
+    font-size: 1rem;
+
+  }
+
+  .heading {
+    font-size: 18px;
+  }
+
+  .sub__heading {
+    font-size: 3rem;
   }
 }

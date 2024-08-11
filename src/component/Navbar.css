@@ -1,11 +1,10 @@
-/* **************************NAVBAR************************ */
 nav {
   width: 100vw;
   height: 7rem;
   position: fixed;
   top: 0;
   z-index: 11;
-  background-color: var(--color-bgc-header);
+  background-color: var(--color-primary1);
 }
 
 .nav__container {
@@ -22,7 +21,7 @@ nav {
 }
 
 .nav__container .logo span {
-  color: var(--color-1);
+  color: var(--color-primary3);
 }
 
 .menu-icon {
@@ -34,14 +33,29 @@ nav {
   align-items: center;
   gap: 3rem;
 }
-
 .nav__menu a {
   font-size: 1.6rem;
-  transition: var(--transition);
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
 }
 
-.nav__menu a:hover {
-  color: var(--color-1);
+.nav__menu a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-white);
+  bottom: 0;
+  right: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.nav__menu a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .except {
@@ -49,19 +63,20 @@ nav {
   padding: 1rem;
   border-radius: 1rem;
   transition: var(--transition);
+  color: var(--color-primary2);
 }
 
 .except:hover {
   border-bottom: var(--color-white);
   background-color: transparent;
+  color: var(--color-white);
 }
 
 @media screen and (max-width: 768px) {
   .menu-icon {
     display: inline-block;
-    font-size: 3rem;
     cursor: pointer;
-    color: var(--color-light);
+    color: var(--color-white);
   }
 
   .nav__menu {
@@ -73,17 +88,21 @@ nav {
     flex-direction: column;
     gap: 0;
     display: none;
-    background-color: #632107;
-    box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+    background: linear-gradient(45deg, #ff7e5f, #f25b0a, #cc0b0bd1, #632107);
+    box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.405);
   }
 
-  .nav__menu.open {
+   .nav__menu.open {
     display: flex;
+  } 
+
+  .nav__menu a::after {
+    background-color: var(--color-white);
+    top: 28px;
   }
 
   .nav__menu li {
-    width: 100%;
-    height: 8rem;
+    height: 7.5rem;
     animation: animateNavItems 400ms linear forwards;
     transform-origin: top center;
     opacity: 0;
@@ -121,9 +140,14 @@ nav {
   }
 
   .nav__menu li a {
-    height: 100%;
-    width: 100%;
     display: grid;
     place-items: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+
+  .except {
+    height: 4rem;
+    width: 100%;
   }
 }

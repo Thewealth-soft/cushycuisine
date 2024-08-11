@@ -7,10 +7,9 @@ function Header() {
     <section className="header__container">
       <div className="content">
         <div className="content__textarea">
-          <h1>Your favorite food delivered Hot & fresh</h1>
+          <h1>Your home of sweetness<h1 className="inner__text">delivered Hot & fresh</h1> </h1>
           <p>
-            Healthy switter chef do all the prep work, like peeling, chopping
-            nariating, so you can cook a fresh food.
+           We are the food plug of the people, a fast food and restaurant that delivers ready-made healthy food. 
           </p>
           <a href="#order" className="btn">
             Order Now

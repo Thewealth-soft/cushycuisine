@@ -37,7 +37,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-light);
+  background-color: var(--color-secondary);
   border: 2px solid var(--text-color1);
   border-radius: 0 4rem;
   box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
@@ -74,6 +74,7 @@ p {
   margin-top: 0.7rem;
   padding-bottom: 0.5rem;
   font-size: 1.9rem;
+  color: var(--color-primary2);
 }
 
 .food__stripe p {
@@ -85,27 +86,49 @@ p {
   font-size: 1.6rem;
   margin-top: 0.3rem;
   text-align: center;
+  color: var(--color-dark2);
 }
+
 @media screen and (max-width: 1024px) {
   .menu__title p {
-      font-size: 1.7rem;
-    }
-  
-    .food__stripe h2 {
-      font-size: 2.5rem;
-    }
-  
-    .food__stripe p {
-      font-size: 1.6rem;
-    }
-  
-    .food__price {
-      font-size: 2.5rem;
-    }
-} 
+    font-size: 1.7rem;
+  }
+
+  .food__stripe h2 {
+    font-size: 2.5rem;
+  }
+
+  .food__stripe p {
+    font-size: 1.6rem;
+  }
+
+  .food__price {
+    font-size: 2.5rem;
+  }
+}
 
 @media screen and (max-width: 768px) {
-.food__container {
-   grid-template-columns: repeat(auto-fit, minmax(21.5rem, 1fr));
- }
+  .food__container {
+    grid-template-columns: repeat(auto-fit, minmax(21.5rem, 1fr));
+  }
+}
+
+@media screen and (max-width: 451px) {
+  .menu__container .heading {
+    font-size: 18px;
+  }
+
+  .menu__container .sub__heading {
+    font-size: 2.5rem;
+  }
+    .menu__title p {
+      font-size: 1.2rem;
+    }
+    
+}
+
+@media screen and (max-width: 375px) {
+  .menu__container .sub__heading {
+    font-size: 2rem;
+  }
 }

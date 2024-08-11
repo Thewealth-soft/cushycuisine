@@ -28,7 +28,6 @@ function About() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis totam dolore repellendus quos cum
             quibusdam dignissimos laudantium sequi perspiciatis in.
           </p>
-          {/* <small> use a very large image</small> */}
           <a href="#" class="btn about__btn">Learn More</a>
         </div>
 
