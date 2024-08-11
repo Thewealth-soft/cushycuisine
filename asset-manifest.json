@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/cushycuisine/static/css/main.74483d07.css",
+    "main.js": "/cushycuisine/static/js/main.0868f754.js",
+    "static/js/453.5309b0bb.chunk.js": "/cushycuisine/static/js/453.5309b0bb.chunk.js",
+    "static/media/food1.jpg": "/cushycuisine/static/media/food1.e56b83c7f16f5fef6582.jpg",
+    "static/media/aboutimg.png": "/cushycuisine/static/media/aboutimg.23bd83e95b82c3d91d27.png",
+    "static/media/foodie2.JPG": "/cushycuisine/static/media/foodie2.ac559fd287d39a324cc6.JPG",
+    "static/media/food4.jpg": "/cushycuisine/static/media/food4.8a0d17ff7caee5985863.jpg",
+    "static/media/food6.jpg": "/cushycuisine/static/media/food6.b83505d0b9ddc6cdf68f.jpg",
+    "static/media/food2.jpg": "/cushycuisine/static/media/food2.1368204dfd98f9a87720.jpg",
+    "static/media/food3.jpg": "/cushycuisine/static/media/food3.21dd37c93c91d8187cac.jpg",
+    "static/media/food5.jpg": "/cushycuisine/static/media/food5.e41d912ffa1161a31849.jpg",
+    "index.html": "/cushycuisine/index.html",
+    "main.74483d07.css.map": "/cushycuisine/static/css/main.74483d07.css.map",
+    "main.0868f754.js.map": "/cushycuisine/static/js/main.0868f754.js.map",
+    "453.5309b0bb.chunk.js.map": "/cushycuisine/static/js/453.5309b0bb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.74483d07.css",
+    "static/js/main.0868f754.js"
+  ]
+}
